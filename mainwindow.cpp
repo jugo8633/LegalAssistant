@@ -10,10 +10,10 @@ MainWindow::MainWindow(QWidget *parent) :
 
     ui->setupUi(this);
     webview=new QWebEngineView(this);
-    //webview->load(QUrl("http://www.google.com"));
-    //webview->load(QUrl("file:///github/LegalAssistant/page/example/index.htm"));
-    webview->setUrl(QUrl::fromLocalFile("/github/LegalAssistant/page/example/index.htm"));
-    webview->resize(800,600);
+   // webview->load(QUrl("http://www.google.com"));
+   // webview->load(QUrl("file:///github/LegalAssistant/page/example/index.htm"));
+    webview->load(QUrl::fromLocalFile("/github/LegalAssistant/page/example/index.htm"));
+    //webview->setUrl(QUrl::fromLocalFile("/github/LegalAssistant/page/night-club/index.html"));
     webview->show();
     setCentralWidget(webview);
 
