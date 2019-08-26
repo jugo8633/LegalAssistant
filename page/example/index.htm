@@ -2,13 +2,28 @@
 
 <head>
 <title></title>
+
+<script>
+function toggleMute() {
+
+var video=document.getElementById("myVideo")
+
+
+        video.muted = false;
+
+}
+</script>
 </head>
 
 <body>
-<video  loop controls>
+<video  id='myVideo' autoplay loop muted playsinline>
    <source src="hop.ogg" type="video/ogg">
 </video>
 <br>
 
 </body>
 </html>
+
+<script>
+
+</script>
